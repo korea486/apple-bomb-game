@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>문의 - 사과 폭탄 게임</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    header, nav { margin-bottom: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #007acc; }
+    form { display: flex; flex-direction: column; }
+    label { margin-top: 10px; }
+    input, textarea { margin-top: 5px; padding: 8px; font-size: 1em; }
+    button { margin-top: 15px; padding: 10px; font-size: 1em; background: #007acc; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>문의하기</h1>
+    <nav>
+      <a href="index.html">게임</a>
+      <a href="about.html">소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="contact.html">문의</a>
+    </nav>
+  </header>
+  <main>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">문의 내용</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">보내기</button>
+    </form>
+  </main>
+</body>
+</html>
